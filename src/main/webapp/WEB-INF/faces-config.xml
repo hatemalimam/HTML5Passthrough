@@ -7,12 +7,4 @@
     <factory>
         <render-kit-factory>org.omnifaces.renderkit.Html5RenderKitFactory</render-kit-factory>
     </factory>
-    
-    <context-param>
-        <param-name>org.omnifaces.HTML5_RENDER_KIT_PASSTHROUGH_ATTRIBUTES</param-name>
-        <param-value>
-            javax.faces.component.html.HtmlForm=data-parsley-validate; <!-- test also javax.faces.component.UIForm -->
-            javax.faces.component.html.HtmlInputText=data-parsley-type;            
-        </param-value>
-    </context-param>
 </faces-config>
