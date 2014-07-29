@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+
+    <factory>
+        <render-kit-factory>org.omnifaces.renderkit.Html5RenderKitFactory</render-kit-factory>
+    </factory>
+    
+    <context-param>
+        <param-name>org.omnifaces.HTML5_RENDER_KIT_PASSTHROUGH_ATTRIBUTES</param-name>
+        <param-value>
+            javax.faces.component.html.HtmlForm=data-parsley-validate; <!-- test also javax.faces.component.UIForm -->
+            javax.faces.component.html.HtmlInputText=data-parsley-type;            
+        </param-value>
+    </context-param>
+</faces-config>
